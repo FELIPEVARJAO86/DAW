@@ -1,0 +1,37 @@
+<! DOCTYPE html >
+< html  lang = " en " >
+< cabeça >
+    < meta  charset = " UTF-8 " >
+    < título > Título </ título >
+    < script >
+        function  mostraInfo ( str )  {
+            //console.log(str)
+            if  ( comprimento do str . > 0 ) {   
+                var  xmlhttp  =  new  XMLHttpRequest ( ) ;
+                xmlhttp . onreadystatechange  =  function ( )  {
+                    if  ( this . readyState  ==  4  &&  this . status  ==  200 )  {
+                        documento . getElementById ( "resposta" ) . valor  =  isso . responseText ;
+                        console . log ( this . responseText ) ;
+                    }
+                }
+                //console.log(str.length)
+                xmlhttp . abrir ( "GET" ,  "EX22_ChamadaAjax.php? estado =" + str ,  true ) ;
+                xmlhttp . enviar ( ) ;
+                //console.log(str);
+            }  else  {
+                documento . getElementById ( "resposta" ) . valor  =  "" ;
+            }
+        }
+    </ script >
+</ head >
+< corpo >
+    < h3 > teste ajax </ h3 >
+< form  action = "" >
+    Diga seu estado:
+    < input  type = " text " id = " uf " name = " uf " onchange = " mostraInfo (this.value) " >
+    < Br >
+    Cidade:
+    < input  type = " text " id = " resposta " name = " resposta " >
+</ form >
+</ body >
+</ html >
