@@ -1,0 +1,124 @@
+* { margem : 0 ; preenchimento : 0 ; }
+
+corpo           { plano de fundo : # 424959 ; fonte : 12 px / 1,35 Arial , Helvetica , sem serifa; cor : # 000 ; alinhamento de texto : centro; }
+mesa ,
+div # conteudo   { largura máxima :  800 px ; margem :   0 automático; }
+
+img            { borda : 0 ; alinhamento vertical : topo; }
+
+a              { cor : # 000 ; decoração de texto : nenhum; }
+a : pairar        { decoração de texto : nenhum; }
+: foco         { esboço : 0 ; }
+
+/ * Headings * /
+h1             { tamanho da fonte : 20 px ; peso da fonte : normal; altura da linha : 1,15 ; }
+h2             { tamanho da fonte :  30 px ; peso da fonte : negrito; cor :  # fff ; espaçamento entre letras :  10 px ; margem :  100 px  0 px  0 px  15 px ; }
+h3             { tamanho da fonte : 16 px ; peso da fonte : negrito; altura da linha : 1,25 ; }
+h4             { tamanho da fonte : 14 px ; peso da fonte : negrito; }
+h5             { tamanho da fonte : 12 px ; peso da fonte : negrito; }
+h6             { tamanho da fonte : 11 px ; peso da fonte : negrito; }
+
+/ * Formulários * /
+formulário           { display : inline; }
+conjunto de campos       { borda : 0 ; }
+legend         { color :  # 9eb0b7 ; preenchimento :  10 px ; alinhamento de texto : esquerda; }
+
+/* Mesa */
+tabela          { borda : 0 ; colapso da fronteira : colapso; espaçamento entre bordas : 0 ; células vazias : mostrar; tamanho da fonte : 100 % ; }
+legenda , th , td { vertical-align : top; alinhamento de texto : esquerda; peso da fonte : normal; }
+
+/* Contente */
+forte         { espessura da fonte : negrito; }
+endereço        { estilo da fonte : normal; }
+cite           { estilo da fonte : normal; }
+q ,
+blockquote     { aspas : nenhum; }
+q : antes ,
+q : depois de        { conteúdo : '' ; }
+pequeno , grande      { tamanho da fonte : 1 em ; }
+sup            { tamanho da fonte : 1 em ; alinhamento vertical : topo; }
+
+/ * Listas * /
+ul , ol          { estilo da lista : nenhum; }
+
+/* Ferramentas */
+. oculto        { display : block ! important ; fronteira : 0  ! importante ; margem : 0  ! importante ; preenchimento : 0  ! importante ; tamanho da fonte : 0  ! importante ; altura da linha : 0  ! importante ; largura : 0  ! importante ; altura : 0  ! importante ; estouro : escondido ! importante ; }
+. nobr          { espaço em branco : nowrap ! important ; }
+. wrap          { espaço em branco : normal ! importante ; }
+. a-left        { text-align : left ! important ; }
+. a-center      { text-align : center ! important ; }
+. a-right       { text-align : right ! important ; }
+. v-top         { vertical-align : top; }
+. v-meio      { alinhamento vertical : meio; }
+. f-esquerda ,
+. left          { float : left ! important ; }
+. f-certo ,
+. right         { float : right ! important ; }
+. f-nenhum        { flutuante : nenhum ! importante ; }
+. f-fix         { float : left; largura : 100 % ; }
+. no-display    { display : none; }
+. sem margem     { margem : 0  ! importante ; }
+. sem preenchimento    { preenchimento : 0  ! importante ; }
+. no-bg         { background : nenhum ! importante ; }
+/ * ==================================================== ============================================= * /
+
+
+/ * Estilos globais ================================================== ============================= * /
+/ * Elementos do formulário * /
+input , selecionar , textarea { font : 18 px Arial , Helvetica , sans-serif; alinhamento vertical : meio; cor : # 000 ; plano de fundo : # fff ; }
+entrada . input-text , select , textarea { background : # fff ; borda : 1 px sólido # ddd ; raio da borda :  2 px ; largura :  350 px ; }
+entrada . entrada de texto , textarea { preenchimento : 5 px ; }
+selecione { preenchimento : 1 px ; }
+selecione a  opção { padding-right : 10 px ; }
+selecione . opção multiselect  { border-bottom : 1 px solid # ddd ; preenchimento : 2 px 5 px ; } 
+selecione . opção multiselect  : last-child { border-bottom : 0 ; }
+textarea { overflow : auto; }
+entrada . rádio { margem direita : 3 px ; }
+entrada . caixa de seleção { margem direita : 3 px ; }
+entrada . qty { largura : 2,5 cm  ! importante ; }
+
+botão . botão :: -moz-focus-inner { padding : 0 ; fronteira : 0 ; } / * FF Fix * /
+botão . botão { -webkit-border-fit : lines; } / * <- Safari e correção do Google Chrome * /
+entrada . botão { estouro : visível; largura : automático; fronteira : 0 ; preenchimento : 10 px  50 px  10 px  50 px ; margem : 10 px  20 px  30 px ; plano de fundo :  # 51abd5 ; cor :  # 000 ; tamanho da fonte :  12 px ; peso da fonte : negrito;cursor : ponteiro; }
+entrada . botão {
+    -webkit-transição-duração :  0,4 s ; / * Safari * /
+    duração da transição :  0,4 s ;
+}
+entrada . botão : hover {
+    cor de fundo :  # 4CAF50 ; /* Verde */
+    cor : branco;
+}
+div # lista de  entrada . botão . delete { background :  # ef647d ;  preenchimento :  10 px  15 px ; }
+div # lista de  entrada . botão . delete : hover { background :  # cb314d ; }
+div # lista de  entrada . botão { background :  # cadde1 ; }
+div # lista de  entrada . botão : pairar { background :  # 7ea9b2 ; }
+
+tabela  tr : hover { background :  # cadde1 ; }
+
+botão . botão  span { float : left; altura : 21 px ; fundo : url transparente (.. / images / bkg_button.gif) 0  0 sem repetição; preenchimento : 0  0  0  8 px ; fonte : negrito 12 px / 21px Arial , Helvetica , sans-serif; alinhamento de texto : centro; espaço em branco : nowrap; cor : # fff; }
+botão . botão de  extensão  extensão { background-position : 100 %  0 ; preenchimento : 0  12 px  0  4 px ; }
+botão . desativado {}
+botão . span desativado  {}
+
+botão . btn-checkout  span {}
+botão . btn-checkout . no-checkout {}
+
+:: -webkit-input-placeholder { color : black; tamanho da fonte :  12 px ; }
+: -moz-placeholder { cor : preto; }
+:: -moz-placeholder { color : black; }
+: -ms-input-placeholder { cor : preto; }
+
+ conjunto de campos do formulário { float : left; largura :  50 % ; altura mínima :  220 px ; }
+. polegar { largura :  125 px ; altura :  125 px ; preenchimento :  10 px ; borda :  0 px ; }
+
+div # msg-php { background :  # fff ; preenchimento :  10 px ; margem :  20 px ; peso da fonte : negrito; cor : vermelho; }
+div # lista { background :  # f1f5f8 ; preenchimento :  20 px ; }
+div # lista  tabela { margem :  0 auto; plano de fundo :  # fff ; preenchimento :  10 px ; largura :  95 % ; }
+div # lista  img . polegar { largura :  95 px ; altura :  95 px ; }
+div # lista  p . mais { tamanho da fonte : negrito; tamanho da fonte :  22 px ; preenchimento :  10 px  0 px  10 px  0 px ; }
+
+p . a ,
+p . rodape { preenchimento :  20 px ; cor :  # fff ; tamanho da fonte :  11 px ; peso da fonte : negrito; }
+entrada . foco { plano de fundo :  # fff ; }
+
+/ * ==================================================== ============================================= * /
